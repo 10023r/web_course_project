@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game page</title>
+    <link rel="stylesheet" href="/cp/game.css">
+</head>
+<body>
+<div id="gameResult">
+    <h1 style="display: none; color: greenyellow" id="gamePassed">Congratulations, You won!</h1>
+    <h1 style="display: none; color: red" id="gameOver">Game Over! You lose</h1>
+</div>
+
+<div class="container">
+    <div class="left-menu">
+        <div id="scoreTableContainer">
+            <h1>Score table</h1>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <button id="volBtn">
+            <img src="/cp/img/vol_off.png" alt="" style="background: white; padding: 1px 1px 1px 1px;">
+        </button>
+    </div>
+
+    <canvas id="canvasId" width="544" height="544" style="border:1px solid black;">
+        Your browser doesn't support canvas
+    </canvas>
+    <div id="recordsTable">
+        <h1>Records table</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<form action="/cp/login_form.html" method="get">
+    <button class="submit_btn">Return</button>
+</form>
+
+
+
+<script src="/cp/eventsManager.js"></script>
+<script src="/cp/spriteManager.js"></script>
+<script src="/cp/soundManager.js"></script>
+<script src="/cp/mapManager.js"></script>
+<script src="/cp/entities.js"></script>
+<script src="/cp/physicsManager.js"></script>
+<script src="/cp/gameManager.js"></script>
+<script src="/cp/menuManager.js"></script>
+<script src="/cp/index.js"></script>
+</body>
+</html>
